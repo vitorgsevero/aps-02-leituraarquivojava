@@ -11,8 +11,8 @@ public class LeituraCSV {
 		
 		Scanner ler = new Scanner(System.in);
 		
-    	InputStream is = new FileInputStream(arquivo);
-    	InputStreamReader isr =  new InputStreamReader(is);
+    	InputStream importa = new FileInputStream(arquivo);
+    	InputStreamReader isr =  new InputStreamReader(importa);
     	reader = new BufferedReader(isr);
     	String linha = reader.readLine();
     	
