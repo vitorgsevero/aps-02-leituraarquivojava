@@ -9,8 +9,6 @@ public class LeituraCSV {
 
 	public static void main(String[] args) throws IOException {
 		
-		Scanner ler = new Scanner(System.in);
-		
     	InputStream importa = new FileInputStream(arquivo);
     	InputStreamReader input =  new InputStreamReader(importa);
     	reader = new BufferedReader(input);
