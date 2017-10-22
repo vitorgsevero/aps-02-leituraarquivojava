@@ -12,17 +12,25 @@ public class LeituraCSV {
 		Scanner ler = new Scanner(System.in);
 		
     	InputStream importa = new FileInputStream(arquivo);
-    	InputStreamReader isr =  new InputStreamReader(importa);
-    	reader = new BufferedReader(isr);
-    	String linha = reader.readLine();
+    	InputStreamReader input =  new InputStreamReader(importa);
+    	reader = new BufferedReader(input);
+    	String linhacsv = reader.readLine();
     	
-    	while(linha!=null){
+    	try{
     		
-    		System.out.println(linha);
-    		linha = reader.readLine();
-
-	
-	}
+    	   	while(linhacsv!=null){
+        		
+        		System.out.println(linhacsv);
+        		linhacsv = reader.readLine();
+        		
+    	   	}
+    		
+    	}catch(FileNotFoundException arquivoNaoEncontrado){
+    		
+    		System.out.println("Arquivo não encontrado...");
+    	}
+    	
+ 
     	
 
 }
