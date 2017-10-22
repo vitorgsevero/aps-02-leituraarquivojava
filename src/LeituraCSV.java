@@ -17,22 +17,16 @@ public class LeituraCSV {
     	String linhacsv = reader.readLine();
     	
     	try{
-    		
     	   	while(linhacsv!=null){
         		
         		System.out.println(linhacsv);
-        		linhacsv = reader.readLine();
-        		
+        		linhacsv = reader.readLine();	
     	   	}
-    		
     	}catch(FileNotFoundException arquivoNaoEncontrado){
-    		
+  
     		System.out.println("Arquivo não encontrado...");
     	}
-    	
- 
-    	
 
-}
+	}
 	
 }
