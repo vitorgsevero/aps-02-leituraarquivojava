@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class LeituraCSV {
 	
-	public static File arquivo = new File("participantes.csv"); //colocar o arquivo na mesma pasta
+	public static File arquivo = new File("participantes.csv");
 	private static BufferedReader reader;
 
 	public static void main(String[] args) throws IOException {
